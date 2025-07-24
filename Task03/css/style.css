@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* tom neutro para o fundo */
+}
+
+header {
+  background-color: #007BFF; /* azul grêmio */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #000000; /* preto */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  background-color: #ffffff; /* branco */
+  padding: 20px;
+  min-height: 400px;
+  color: #000; /* texto preto no main */
+}
+
+footer {
+  background-color: #007BFF; /* azul */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* Responsividade básica (Mobile First + Flexbox nos menus) */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section, form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 1 1 calc(33.33% - 1rem);
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+}
+
+
+body {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 calc(33% - 1rem);
+  background-color: #e7f1ff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Início | Galeria Fotográfica</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Galeria Fotográfica</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="menu1.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/galeria-mobile.jpg">
+        <source media="(max-width: 1024px)" srcset="img/galeria-tablet.jpg">
+        <img src="img/galeria-desktop.jpg" alt="Exemplo de galeria fotográfica" style="width: 100%; border-radius: 8px; margin-bottom: 2rem;">
+      </picture>
+
+      <p>Bem-vindo ao nosso espaço dedicado à arte de capturar momentos. Aqui você encontrará uma seleção das nossas melhores imagens e conhecerá mais sobre nosso trabalho e história.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h2>📸 Retratos</h2>
+        <p>Fotografias profissionais para currículos, redes sociais e lembranças especiais.</p>
+      </div>
+      <div class="card">
+        <h2>🎉 Eventos</h2>
+        <p>Registros únicos de casamentos, aniversários e celebrações.</p>
+      </div>
+      <div class="card">
+        <h2>🌄 Natureza</h2>
+        <p>Paisagens, cliques autorais e fotografia artística em ambientes externos.</p>
+      </div>
+    </section>
+
+    <a href="menu1.html" class="cta">Veja nosso trabalho</a>
+  </main>
+
+  <footer>
+    <p>Telefone: (51) 98765-4321 | Email: contato@galeriafoto.com</p>
+  </footer>
+</body>
+</html>
